@@ -1,6 +1,3 @@
-import sys
-
-sys.append("C:\\Users\\User\\OneDrive\\Документы\\KV_DW_JL_5\\Ml_deployments\\production_model_package")
 from typing import List, Optional, Tuple
 import numpy as np
 import pandas as pd
