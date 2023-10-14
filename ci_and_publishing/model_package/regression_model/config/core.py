@@ -36,7 +36,7 @@ class ModelConfig(BaseModel):
     categorical_vars_with_na_missing: List[str]
     numerical_vars_with_na: List[str]
     temporal_vars: List[str]
-    ref_vars: str
+    ref_var: str
     numericals_log_vars: Sequence[str] #показывает последовательность почти как упоряд-ый set
     binarize_vars: Sequence[str]
     qual_vars: List[str]
