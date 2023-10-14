@@ -27,7 +27,7 @@ def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
     if not errors:
         predictions = _price_pipe.predict(X=validated_data[config.model_config.features])
         results = {
-            "predictions": [np.exp(pred) for pred in predictions],
+            "predictions": [np.exp(pred) for pred in predictions], #type: ignore
             "version": _version,
             "errors": errors
         }

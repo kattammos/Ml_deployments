@@ -9,7 +9,7 @@ class TemporalVariableTransformer(BaseEstimator, TransformerMixin):
             raise ValueError('Variables should be a list')
 
         self.variables = variables
-        self.reference_variables = reference_variable
+        self.reference_variable = reference_variable
 
     def fit(self, X: pd.DataFrame, y: pd.Series = None):
 
@@ -39,5 +39,5 @@ class Mapper(BaseEstimator, TransformerMixin):
         X = X.copy()
 
         for feature in self.variables:
-            X[feature] = X[Feature].map(self.mappings)
+            X[feature] = X[feature].map(self.mappings)
         return X
