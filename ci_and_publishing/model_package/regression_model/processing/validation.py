@@ -118,5 +118,5 @@ class HouseDataInputSchema(BaseModel):
     SecondFlrSF: Optional[int]  # rename
     ThreeSsnPortch: Optional[int]  # renamed
 
- class MultipleHouseDataInputs(BaseModel):
-     inputs:List[HouseDataInputSchema]
+class MultipleHouseDataInputs(BaseModel):
+    inputs:List[HouseDataInputSchema]
