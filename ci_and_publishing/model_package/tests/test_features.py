@@ -8,7 +8,7 @@ def test_temporal_variable_transformer(sample_input_data):
 
     #Given
     transformer = TemporalVariableTransformer(
-        variable=config.model_config.temporal_vars,
+        variables=config.model_config.temporal_vars,
         reference_variable=config.model_config.ref_var
     )
 
