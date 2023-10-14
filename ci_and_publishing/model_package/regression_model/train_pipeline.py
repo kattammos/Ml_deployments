@@ -5,6 +5,7 @@ from pipeline import price_pipe
 from processing.data_manager import load_dataset, save_pipeline
 from sklearn.model_selection import train_test_split
 
+
 def run_training() -> None:
     data = load_dataset(file_name=config.app_config.training_data_file)
 
@@ -21,6 +22,7 @@ def run_training() -> None:
     price_pipe.fit(X_train, y_train)
 
     save_pipeline(pipeline_to_persist=price_pipe)
+
 
 if __name__ == '__main__':
     run_training()
